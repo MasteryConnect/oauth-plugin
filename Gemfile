@@ -1,5 +1,9 @@
 source "http://rubygems.org"
 
+group :development do
+  gem 'opentransact', git: 'https://github.com/onemedical/opentransact-ruby.git', ref: '0f66b3889f5f6c0c9ea8fbf2d8fe26692cff0783'
+end
+
 # Specify your gem's dependencies in oauth-plugin.gemspec
 gemspec
 
