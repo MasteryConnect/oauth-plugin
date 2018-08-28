@@ -19,7 +19,7 @@ module OAuth
         if @token
           render :text => @token.to_query
         else
-          render :nothing => true, :status => 401
+          render body: nil, :status => 401
         end
       end
 
@@ -28,7 +28,7 @@ module OAuth
         if @token
           render :text => @token.to_query
         else
-          render :nothing => true, :status => 401
+          render body: nil, :status => 401
         end
       end
 
